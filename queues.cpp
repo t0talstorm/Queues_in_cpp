@@ -1,3 +1,7 @@
+// Name: Aditya Sinha 
+// PRN: 24070123006
+// Branch: EnTC A1
+
 #include <iostream>
 using namespace std;
 #define SIZE 5
