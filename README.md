@@ -119,38 +119,6 @@ public:
 
 ---
 
-### 2. Circular Queue Implementation
-
----
-
-**File:** `circular_queue.cpp`  
-**Experiment ID:** QUE-02
-
-**Description:** Implements circular queue to overcome memory wastage issue of simple queue, where rear pointer wraps around to beginning when it reaches the end, allowing reuse of freed space.
-
-**Algorithm:**
-1. **Circular Enqueue:**
-   - Check if queue is full using modular arithmetic
-   - Use (rear + 1) % SIZE to wrap around
-   - Insert element and update rear pointer circularly
-
-2. **Circular Dequeue:**
-   - Check if queue is empty
-   - Remove element from front
-   - Update front pointer using modular arithmetic: (front + 1) % SIZE
-
-3. **Full/Empty Conditions:**
-   - Empty: front == rear (initially both are 0)
-   - Full: (rear + 1) % SIZE == front
-
-4. **Display Function:**
-   - Traverse circularly from front to rear
-   - Handle wraparound case properly
-
-**Key Learning:** Understanding circular array concepts, modular arithmetic for wraparound, and efficient memory utilization in queue implementation.
-
----
-
 ## Key Learning Outcomes:
 
 1. **Queue Fundamentals**: Understanding FIFO principle and queue structure
